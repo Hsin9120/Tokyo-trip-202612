@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>東京・河口湖行程 12/10–12/14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
+<style>
+:root{--bg:#f2f4f5;--sf:#fff;--ink:#14233a;--mut:#5d6b7e;--ln:#d9dfe5;--ac:#23467a;--acs:#e3eaf4;--ok:#4f6f2c;--oks:#e8f0dc;--rs:#b63a26;--rss:#fbe6e1;--wn:#9a6a10;--wns:#fbf0d6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1722;--sf:#172233;--ink:#e8edf4;--mut:#9aa8ba;--ln:#2a384c;--ac:#8fb3e8;--acs:#1f3250;--ok:#a5c477;--oks:#243019;--rs:#f08a78;--rss:#3a1d18;--wn:#e3b85a;--wns:#352a10;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1722;--sf:#172233;--ink:#e8edf4;--mut:#9aa8ba;--ln:#2a384c;--ac:#8fb3e8;--acs:#1f3250;--ok:#a5c477;--oks:#243019;--rs:#f08a78;--rss:#3a1d18;--wn:#e3b85a;--wns:#352a10;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.7 "Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}
+header{padding:28px 20px 6px;max-width:980px;margin:0 auto}
+h1{font:900 clamp(26px,6vw,40px)/1.25 "Noto Serif TC","Songti TC",serif;margin:0 0 6px}
+header p{margin:0;color:var(--mut)}
+nav{display:flex;gap:2px;max-width:980px;margin:14px auto 0;padding:0 20px;border-bottom:1px solid var(--ln);overflow-x:auto}
+nav button{background:none;border:0;border-bottom:3px solid transparent;color:var(--mut);font:500 15px "Noto Sans TC",sans-serif;padding:10px 14px;cursor:pointer;white-space:nowrap}
+nav button[aria-selected=true]{color:var(--ac);border-color:var(--ac);font-weight:700}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+main{max-width:980px;margin:0 auto;padding:18px 20px}
+.pane[hidden]{display:none}
+.card,.panel{background:var(--sf);border:1px solid var(--ln);border-radius:6px;padding:16px}
+.panel{margin-bottom:14px}
+.card{display:flex;flex-direction:column;gap:8px}
+.card h3,.panel h3{margin:0;font:700 18px/1.4 "Noto Serif TC",serif}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px;margin-bottom:16px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.chip{border:1px solid var(--ln);background:var(--sf);color:var(--ink);border-radius:999px;padding:4px 14px;font:inherit;font-size:14px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ac);border-color:var(--ac);color:var(--bg)}
+.tag{padding:1px 10px;border-radius:4px;background:var(--acs);color:var(--ac);font-size:13px}
+.tag.need{background:var(--rss);color:var(--rs);font-weight:700}
+.tag.rec{background:var(--wns);color:var(--wn);font-weight:700}
+.tag.no{background:var(--oks);color:var(--ok)}
+.meta{display:flex;gap:6px;flex-wrap:wrap}
+.note{font-size:13px;color:var(--mut);margin:0}
+ul{margin:0;padding-left:18px;font-size:14px}
+.add{margin-top:auto;border:1px solid var(--ac);background:none;color:var(--ac);border-radius:4px;padding:6px;font:500 14px "Noto Sans TC",sans-serif;cursor:pointer}
+.add[aria-pressed=true]{background:var(--ac);color:var(--bg)}
+.pills{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px}
+.pill{flex:0 0 auto;border:1px solid var(--ln);background:var(--sf);color:var(--ink);border-radius:6px;padding:6px 14px;font:500 14px "Noto Sans TC",sans-serif;cursor:pointer;text-align:left}
+.pill[aria-current=true]{background:var(--ac);border-color:var(--ac);color:var(--bg)}
+.slider{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;scrollbar-width:thin}
+@media (prefers-reduced-motion:no-preference){.slider{scroll-behavior:smooth}}
+.slide{flex:0 0 100%;scroll-snap-align:start;min-width:0}
+.slide h3{margin:0;font:700 20px/1.4 "Noto Serif TC",serif}
+.sub{margin:0 0 10px;color:var(--mut);font-size:13px}
+.step{display:flex;gap:12px;padding:6px 0;font-size:14px;border-top:1px solid var(--ln)}
+.step b{flex:0 0 78px;color:var(--ac)}
+.step.fix b{color:var(--rs)}
+.step div{flex:1}
+a{color:var(--ac)}
+.hint{color:var(--mut);font-size:13px;margin:6px 0 0}
+.ux{border:1px solid var(--ln);background:none;color:var(--mut);border-radius:4px;font-size:12px;padding:0 8px;cursor:pointer;margin-left:6px}
+.nv{display:flex;justify-content:space-between;margin-top:10px}
+.nv button{border:1px solid var(--ln);background:var(--sf);color:var(--ink);border-radius:4px;padding:6px 16px;font:500 14px "Noto Sans TC",sans-serif;cursor:pointer}
+.nv button:disabled{opacity:.4}
+.pick{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 14px}
+.pick label{display:flex;gap:6px;align-items:center;border:1px solid var(--ln);border-radius:4px;padding:4px 10px;font-size:14px;cursor:pointer}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+select,.num{font:inherit;padding:5px 10px;border:1px solid var(--ln);border-radius:4px;background:var(--bg);color:var(--ink)}
+.num{width:110px;text-align:right}
+.go{background:var(--ac);color:var(--bg);border:0;border-radius:4px;padding:9px 22px;font:700 15px "Noto Sans TC",sans-serif;cursor:pointer}
+.day{border-left:3px solid var(--ac);padding-left:16px;margin:0 0 18px}
+.leg{color:var(--mut);font-size:13px;padding:2px 0 2px 12px;border-left:2px dotted var(--ln)}
+.sum{display:flex;gap:18px;flex-wrap:wrap;font-weight:700}
+.ck{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-top:1px solid var(--ln);font-size:14px}
+.ck input{margin-top:5px}
+.ck input:checked+span{color:var(--mut);text-decoration:line-through}
+table{border-collapse:collapse;width:100%;font-size:14px}
+td{padding:7px 4px;border-top:1px solid var(--ln);vertical-align:middle}
+td.l{width:55%}
+td.r{text-align:right;white-space:nowrap}
+.big{font:900 26px "Noto Serif TC",serif}
+footer{max-width:980px;margin:0 auto;padding:6px 20px 40px;color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<h1>東京・河口湖行程</h1>
+<p>12/10（四）至 12/14（一）</p>
+</header>
+<nav role="tablist" id="nav"></nav>
+<main>
+<section class="pane" id="p0">
+<div class="pills" id="pills"></div>
+<div class="slider" id="sl"></div>
+<div class="nv"><button id="pv">上一天</button><button id="nx">下一天</button></div>
+</section>
+<section class="pane" id="p1" hidden><div class="grid" id="meals"></div><p class="note">餐廳營業時間與公休日請出發前再查；下方為各地特色與用餐時段的安排。</p></section>
+<section class="pane" id="p2" hidden><div class="grid" id="stay"></div></section>
+<section class="pane" id="p3" hidden><div class="panel"><h3>出發前準備</h3><div id="ck"></div></div></section>
+<section class="pane" id="p4" hidden>
+<div class="panel"><h3>新增想去的地方</h3><p class="note" style="margin:4px 0 10px">輸入名稱後新增。在下方卡片選日期與時間，按「排進行程」，就會出現在行程頁那天的時間表裡。</p><div class="row"><input class="num" id="cn" placeholder="地點名稱" style="width:180px;text-align:left"> <select id="cc"><option>東京</option><option>河口湖</option></select> <select id="cs"><option value="1">停留 1 小時</option><option value="1.5" selected>停留 1.5 小時</option><option value="2">停留 2 小時</option><option value="3">停留 3 小時</option></select> <select id="cr"><option>不需</option><option>建議預約</option><option>必須預約</option></select> <button class="go" id="ca">新增</button></div></div>
+<div class="chips" id="chips"></div>
+<div class="grid" id="grid"></div>
+<div class="panel"><h3>幫我排順路行程</h3>
+<div class="pick" id="pick"></div>
+<div class="row"><label>每天行程時數 <select id="hrs"><option>6</option><option selected>8</option><option>10</option></select></label><button class="go" id="go">產生最佳行程</button></div></div>
+<div id="out"></div>
+</section>
+<section class="pane" id="p5" hidden>
+<div class="panel"><h3>已訂（NT$）</h3><table id="t1"></table></div>
+<div class="panel"><h3>日本當地（¥）</h3><table id="t2"></table></div>
+<div class="panel"><div class="row">匯率 1 ¥ = NT$ <input class="num" id="rate" type="number" step="0.001" value="0.21" style="width:80px"> <span class="note">請改成當下匯率</span></div>
+<p class="big" id="tot"></p><p class="note" id="sub"></p></div>
+</section>
+</main>
+<footer>列車時刻依 JR 東日本 2026 年 10 月公布的時刻表整理；到站時間、票價與花費皆為預估，請以官方資料為準。</footer>
+<script>
+function $(i){return document.getElementById(i)}
+function fm(n){return "¥"+Math.round(n).toLocaleString("ja-JP")}
+var D=[
+{d:"12/10（四）",t:"台北到東京，淺草寺",s:"住：京城里士滿飯店（錦糸町）",i:[
+["06:50","酷航 TR866 由桃園起飛","fix"],
+["約 11:00","抵達成田（預估），入境後搭電車到錦糸町，約 90 分"],
+["約 14:00","到飯店寄放行李，15:00 後入住"],
+["16:00","淺草寺與仲見世通，從錦糸町約 20 分"],
+["晚上","吃晚餐後早點休息，隔天 07:07 要上車"]]},
+{d:"12/11（五）",t:"富士回遊到河口湖",s:"住：大池ホテル（河口湖船津）",i:[
+["07:07","錦糸町搭富士回遊 3 號（平日班次），需先訂指定席","fix"],
+["約 09:15","下吉田下車（預估）"],
+["09:40","新倉山淺間公園：爬約 400 階，看五重塔與富士山，步行約 25 分"],
+["11:45","富士吉田本町通午餐"],
+["13:30","搭富士急行到河口湖，約 20 分；河口湖駅有飯店免費接送，請先向飯店確認方式"],
+["14:00","到大池ホテル寄放行李（15:00–18:00 入住）"],
+["15:00","天上山纜車，離飯店約 1.3 公里；冬天約 16:30 日落"],
+["17:30","回飯店泡溫泉、晚餐"]]},
+{d:"12/12（六）",t:"富士山路跑，回東京",s:"住：Keikyu EX Inn Tokyo",i:[
+["08:40","路跑約 40 分，到 09:20","fix"],
+["10:00","大池ホテル 10:00 前退房，時間很緊，先把行李整理好"],
+["10:30","河口湖畔自由時間與午餐；想去忍野八海要預留來回約 1.5 小時"],
+["14:58","河口湖搭富士回遊 36 號，16:58 到新宿（土休日班次）","fix"],
+["17:30","到 Keikyu EX Inn 入住，晚餐"]]},
+{d:"12/13（日）",t:"明治神宮與 teamLab",s:"住：Keikyu EX Inn Tokyo",i:[
+["09:00","明治神宮，接著逛原宿，約 2.5 小時"],
+["12:00","澀谷午餐"],
+["約 14:00","teamLab：時段依你訂到的票調整，約 2 小時，要赤腳"],
+["17:00","傍晚到台場或豐洲夜景散步，晚餐"]]},
+{d:"12/14（一）",t:"築地、澀谷 SKY，回台北",s:"退房後行李寄放飯店",i:[
+["08:30","築地場外市場早餐，約 1.5 小時；從飯店搭日比谷線約 5 分"],
+["11:30","澀谷 SKY 展望台，先訂時段，約 1.5 小時"],
+["13:00","午餐、最後採買"],
+["15:30","回飯店取行李"],
+["16:30","搭電車往成田第 1 航廈，約 1 到 1.5 小時"],
+["約 19:00","抵達成田第 1 航廈，辦理報到","fix"],
+["22:05","樂桃 MM627 由成田起飛","fix"]]}];
+var M=[
+["12/10","午餐：機上或成田","晚餐：淺草的炸天婦羅、人形燒等小吃，或回錦糸町車站周邊的拉麵、居酒屋"],
+["12/11","午餐：富士吉田的吉田烏龍麵（麵很硬、有嚼勁）","晚餐：飯店用餐（先確認住宿方案是否含餐），或河口湖的ほうとう（味噌湯麵鍋）"],
+["12/12","早餐：路跑前吃輕食，如飯糰、香蕉","午餐：河口湖畔的ほうとう或蕎麥麵；晚餐：新宿思い出橫丁串燒或拉麵"],
+["12/13","午餐：原宿竹下通可麗餅，或澀谷拉麵","晚餐：台場或豐洲商場內的餐廳"],
+["12/14","早餐：築地場外市場的玉子燒、海鮮丼、串燒","午餐：澀谷；晚餐：成田第 1 航廈內餐廳"]];
+var H=[
+{n:"京城里士滿飯店（錦糸町）",d:"12/10 住 1 晚",l:["離錦糸町站近，隔天 07:07 的富士回遊 3 號從這裡上車","可寄放大行李；入住與退房時間請看訂房確認信"]},
+{n:"大池ホテル 富士山の見える温泉旅館",d:"12/11 住 1 晚",l:["地址：山梨縣富士河口湖町船津 6713-103","入住 15:00 起（受理至 18:00），退房 10:00","河口湖駅有免費接送，距河口湖約 0.6 公里、天上山纜車約 1.3 公里","有溫泉；12/12 要 08:40 路跑，建議前一晚先確認早餐時間與暖身空間"]},
+{n:"Keikyu EX Inn 東京・日本橋",d:"12/12 到 12/14，住 2 晚",l:["茅場町站 2 號出口步行約 2 分","搭日比谷線到築地約 5 分，12/14 早上去築地很方便","12/14 退房後可先寄放行李，晚上再取"]}];
+var P=[
+["need","訂富士回遊 3 號指定席（12/11 錦糸町 07:07 發）"],
+["need","訂 teamLab 指定日期與時段的票"],
+["rec","訂富士回遊 36 號指定席（12/12 河口湖 14:58 發）"],
+["rec","訂澀谷 SKY 時段（12/14）"],
+["rec","向大池ホテル確認接送方式、晚餐與早餐時間"],
+["rec","確認路跑的集合地點與是否需要報名"],
+["","行李決定：12/12 要換到 Keikyu EX Inn，大行李要一起帶去河口湖，或請錦糸町飯店宅配寄過去（先確認可收件）"],
+["","保暖：河口湖 12 月清晨與夜晚很冷，路跑穿分層，帶手套與帽子"],
+["","護照效期、入境資料線上填寫、網路（eSIM 或分享器）"],
+["","交通卡（Suica 或 PASMO）與一些現金，河口湖的小店常只收現金"]];
+var S=[
+{id:"asa",n:"淺草寺",c:"東京",la:35.7148,lo:139.7967,h:["東京最古老的寺廟，雷門大燈籠是地標","仲見世通可吃人形燒、買伴手禮"],r:"不需",s:1.5,f:0,x:"早上或傍晚人較少"},
+{id:"mei",n:"明治神宮",c:"東京",la:35.6764,lo:139.6993,h:["都心裡的森林參道，氣氛安靜","可見到新人舉行傳統婚禮"],r:"不需",s:1.5,f:0,x:"早上最舒服；接著可逛原宿"},
+{id:"sky",n:"澀谷 SKY 展望台",c:"東京",la:35.6595,lo:139.7005,h:["360 度露天展望，可俯瞰澀谷十字路口","天氣好時能看到富士山"],r:"強烈建議",s:1.5,f:2500,x:"先在官網訂時段"},
+{id:"tsu",n:"築地場外市場",c:"東京",la:35.6655,lo:139.7707,h:["海鮮丼、玉子燒、串燒邊走邊吃","新鮮度高，適合當早餐"],r:"不需",s:1.5,f:0,x:"上午最完整；週日部分店家休息"},
+{id:"tlp",n:"teamLab Planets",c:"東京",la:35.6491,lo:139.7897,h:["要赤腳走進水中的沉浸式數位藝術","全程約 100 分鐘，拍照效果很好"],r:"必須預約",s:2,f:3800,x:"需買指定日期與時段的票，旺季常售完"},
+{id:"ara",n:"新倉山淺間公園",c:"河口湖",la:35.5012,lo:138.8049,h:["五重塔與富士山同框的經典畫面","要爬約 400 階，天氣好時最值得"],r:"不需",s:1.5,f:0,x:"從下吉田步行約 25 分；早上空氣較清"},
+{id:"ten",n:"河口湖天上山纜車",c:"河口湖",la:35.5071,lo:138.7642,h:["搭纜車上山，可俯瞰河口湖與富士山","山頂有狸貓茶屋可拍照"],r:"不需",s:1.5,f:900,x:"約 16:30 日落，冬天早點上去"},
+{id:"osh",n:"忍野八海",c:"河口湖",la:35.4600,lo:138.8330,h:["八處富士山融雪形成的清澈湧泉池","周邊有富士山景色與小店"],r:"不需",s:1.5,f:0,x:"從河口湖搭巴士，約 30 分"}];
+var CO=["東京","河口湖"],sel={},cur="全部",ai=0;
+function tg(r){return r==="必須預約"?"need":(r==="不需"?"no":"rec")}
+function lsG(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}}
+function lsS(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+["行程","餐廳","住宿","準備","想去的","花費評估"].forEach(function(t,k){var b=document.createElement("button");b.textContent=t;b.setAttribute("aria-selected",k===0);b.onclick=function(){document.querySelectorAll("#nav button").forEach(function(x){x.setAttribute("aria-selected",x===b)});document.querySelectorAll(".pane").forEach(function(p){p.hidden=p.id!=="p"+k})};$("nav").appendChild(b)});
+var sl=$("sl"),pills=$("pills"),UA=lsG("ua",[]);
+function tmin(t){var m=/(\d{1,2}):(\d\d)/.exec(t);return m?+m[1]*60+ +m[2]:1300}
+function slideHTML(k){var x=D[k],a=x.i.map(function(i,n){return{t:i[0],h:i[1],f:i[2],o:n,m:tmin(i[0])}});
+ UA.forEach(function(u,n){if(u.k===k)a.push({t:u.t||"自訂",h:"<span class='tag'>想去</span> "+u.n+"，停留約 "+u.s+" 小時 <button class='ux' data-u='"+n+"'>移除</button>",o:99+n,m:u.t?tmin(u.t):1300})});
+ a.sort(function(p,q){return p.m-q.m||p.o-q.o});
+ return"<h3>"+x.d+"｜"+x.t+"</h3><p class='sub'>"+x.s+"</p>"+a.map(function(i){return"<div class='step"+(i.f?" fix":"")+"'><b>"+i.t+"</b><div>"+i.h+"</div></div>"}).join("")}
+function renderSlides(){[].forEach.call(sl.children,function(s,k){s.innerHTML=slideHTML(k)})}
+sl.addEventListener("click",function(e){var u=e.target.dataset&&e.target.dataset.u;if(u!==undefined){UA.splice(+u,1);lsS("ua",UA);renderSlides()}});
+D.forEach(function(x,k){
+ var s=document.createElement("div");s.className="card slide";
+ s.innerHTML=slideHTML(k);
+ sl.appendChild(s);
+ var p=document.createElement("button");p.className="pill";p.textContent=x.d;p.onclick=function(){go(k)};pills.appendChild(p)});
+function go(k){ai=Math.max(0,Math.min(D.length-1,k));sl.scrollTo({left:sl.children[ai].offsetLeft-sl.children[0].offsetLeft});mark()}
+function mark(){[].forEach.call(pills.children,function(p,k){p.setAttribute("aria-current",k===ai)});$("pv").disabled=ai===0;$("nx").disabled=ai===D.length-1;pills.children[ai].scrollIntoView({block:"nearest",inline:"nearest"})}
+sl.addEventListener("scroll",function(){var k=Math.round(sl.scrollLeft/(sl.children[0].offsetWidth+14));if(k!==ai){ai=k;mark()}});
+$("pv").onclick=function(){go(ai-1)};$("nx").onclick=function(){go(ai+1)};mark();
+$("meals").innerHTML=M.map(function(m){return"<div class='card'><h3>"+m[0]+"</h3><ul><li>"+m[1]+"</li><li>"+m[2]+"</li></ul></div>"}).join("");
+$("stay").innerHTML=H.map(function(h){return"<div class='card'><span class='tag'>"+h.d+"</span><h3>"+h.n+"</h3><ul>"+h.l.map(function(t){return"<li>"+t+"</li>"}).join("")+"</ul></div>"}).join("");
+var cs=lsG("ck",{});
+P.forEach(function(p,k){var l=document.createElement("label");l.className="ck";var i=document.createElement("input");i.type="checkbox";i.checked=!!cs[k];i.onchange=function(){cs[k]=i.checked;lsS("ck",cs)};var sp=document.createElement("span");sp.innerHTML=(p[0]?"<span class='tag "+p[0]+"'>"+(p[0]==="need"?"必須":"建議")+"</span> ":"")+p[1];l.appendChild(i);l.appendChild(sp);$("ck").appendChild(l)});
+function dist(a,b){if(!a.la||!b.la)return 3;var R=6371,t=Math.PI/180,dl=(b.la-a.la)*t,dn=(b.lo-a.lo)*t,q=Math.sin(dl/2)*Math.sin(dl/2)+Math.cos(a.la*t)*Math.cos(b.la*t)*Math.sin(dn/2)*Math.sin(dn/2);return 2*6371*Math.asin(Math.sqrt(q))}
+function hop(a,b){var d=dist(a,b);if(d<1)return{m:"步行",t:Math.max(3,Math.round(d*14)),c:0};
+ if(a.c==="河口湖")return{m:"步行或巴士",t:Math.round(10+d*4),c:d<3?0:400};
+ return{m:"地鐵或電車",t:Math.round(12+d*3.2),c:d<5?180:(d<10?260:330)}}
+function renderCards(){var g=$("grid");g.innerHTML="";S.filter(function(s){return cur==="全部"||s.c===cur}).forEach(function(s){
+ var d=document.createElement("div");d.className="card";
+ d.innerHTML="<span class='note'>"+s.c+"</span><h3>"+s.n+"</h3><ul>"+s.h.map(function(t){return"<li>"+t+"</li>"}).join("")+"</ul><div class='meta'><span class='tag "+tg(s.r)+"'>"+(s.r==="不需"?"不需預約":s.r)+"</span><span class='tag'>停留 "+s.s+" 小時</span><span class='tag'>"+(s.f?"門票約 "+fm(s.f):"免費")+"</span></div><p class='note'>"+s.x+"</p>";
+ var b=document.createElement("button");b.className="add";b.setAttribute("aria-pressed",!!sel[s.id]);b.textContent=sel[s.id]?"已加入":"加入想去的";
+ b.onclick=function(){sel[s.id]=!sel[s.id];b.setAttribute("aria-pressed",sel[s.id]);b.textContent=sel[s.id]?"已加入":"加入想去的";lsS("sel",sel);renderPick()};
+ d.appendChild(b);
+ var r=document.createElement("div");r.className="row";
+ var ds=document.createElement("select");D.forEach(function(x,k){var o=document.createElement("option");o.value=k;o.textContent=x.d.slice(0,5);ds.appendChild(o)});
+ var tm=document.createElement("input");tm.type="time";tm.className="num";tm.setAttribute("aria-label","時間");
+ var sb=document.createElement("button");sb.className="add";sb.textContent="排進行程";
+ sb.onclick=function(){UA.push({k:+ds.value,t:tm.value,n:s.n,s:s.s});lsS("ua",UA);sel[s.id]=true;lsS("sel",sel);b.setAttribute("aria-pressed",true);b.textContent="已加入";sb.textContent="已排入 "+ds.options[ds.selectedIndex].text;renderSlides();renderPick()};
+ r.appendChild(ds);r.appendChild(tm);r.appendChild(sb);d.appendChild(r);
+ if(s.u){var x=document.createElement("button");x.className="add";x.textContent="刪除這個地點";x.onclick=function(){CU=CU.filter(function(c){return c.id!==s.id});lsS("cu",CU);S=S.filter(function(c){return c.id!==s.id});delete sel[s.id];renderCards();renderPick()};d.appendChild(x)}
+ g.appendChild(d)})}
+function renderChips(){var c=$("chips");c.innerHTML="";["全部"].concat(CO).forEach(function(n){var b=document.createElement("button");b.className="chip";b.textContent=n;b.setAttribute("aria-pressed",n===cur);b.onclick=function(){cur=n;renderChips();renderCards()};c.appendChild(b)})}
+function renderPick(){var p=$("pick");p.innerHTML="";S.forEach(function(s){var l=document.createElement("label"),i=document.createElement("input");i.type="checkbox";i.checked=!!sel[s.id];i.onchange=function(){sel[s.id]=i.checked;lsS("sel",sel);renderCards()};var sp=document.createElement("span");sp.textContent=s.c+"｜"+s.n;l.appendChild(i);l.appendChild(sp);p.appendChild(l)})}
+$("go").onclick=function(){var list=S.filter(function(s){return sel[s.id]}),out=$("out");
+ if(!list.length){out.innerHTML="<p class='note'>請先勾選至少一個景點。</p>";return}
+ var cap=parseInt($("hrs").value,10)*60,days=[],day=null,prev=null,tot={f:0,t:0};
+ CO.forEach(function(city){var pool=list.filter(function(s){return s.c===city}),last=null;
+  while(pool.length){var i=0;if(last){var md=1e9;pool.forEach(function(s,k){var d=dist(last,s);if(d<md){md=d;i=k}})}
+   var s=pool.splice(i,1)[0],st={s:s},u=s.s*60;
+   if(prev&&prev.c!==s.c){day=null;st.lg="從"+prev.c+"前往"+s.c+"：富士回遊，約 2 小時，約 ¥4,000";tot.t+=4000}
+   else if(last){var h=hop(last,s);st.lg="從"+last.n+"前往："+h.m+"，約 "+h.t+" 分，"+(h.c?"約 "+fm(h.c):"免費");u+=h.t;if(day&&day.min+u>cap){day=null;st.lg=null}else tot.t+=h.c}
+   if(!day){day={items:[],min:0};days.push(day)}
+   day.items.push(st);day.min+=u;tot.f+=s.f;last=s;prev=s}});
+ var html="<div class='panel sum'><span>共 "+days.length+" 天</span><span>門票約 "+fm(tot.f)+"</span><span>交通約 "+fm(tot.t)+"</span><span>合計約 "+fm(tot.f+tot.t)+"</span></div>";
+ var need=list.filter(function(s){return s.r!=="不需"});
+ if(need.length)html+="<div class='panel'><strong>要先預約：</strong>"+need.map(function(s){return s.n+"（"+s.r+"）"}).join("、")+"</div>";
+ days.forEach(function(d,k){html+="<div class='day'><strong>第 "+(k+1)+" 天</strong>";d.items.forEach(function(x){if(x.lg)html+="<div class='leg'>"+x.lg+"</div>";html+="<div class='step'><div><strong>"+x.s.n+"</strong>　停留 "+x.s.s+" 小時　<span class='tag "+tg(x.s.r)+"'>"+(x.s.r==="不需"?"不需預約":x.s.r)+"</span></div></div>"});html+="<p class='hint'>預估約 "+Math.round(d.min/6)/10+" 小時（含移動）</p></div>"});
+ out.innerHTML=html};
+var A1=[["機票（含行李）",0],["住宿 3 間合計",0]],
+A2=[["餐費，5 天合計（約每天 ¥4,000）",20000],["成田到錦糸町",1800],["富士回遊 2 趟（每趟約 ¥4,000，訂位時確認）",8000],["下吉田到河口湖",400],["東京市區地鐵",3000],["市區到成田",2000],["teamLab Planets",3800],["澀谷 SKY",2500],["天上山纜車",900],["伴手禮與購物",10000]];
+var sv=lsG("cost",{});
+function rows(id,A,key){$(id).innerHTML="";A.forEach(function(a,k){var tr=document.createElement("tr"),v=sv[key+k]!==undefined?sv[key+k]:a[1];tr.innerHTML="<td class='l'>"+a[0]+"</td><td class='r'><input class='num' type='number' min='0' value='"+v+"' data-k='"+key+k+"'></td>";$(id).appendChild(tr)})}
+function calc(){var a=0,b=0;document.querySelectorAll("[data-k]").forEach(function(i){var v=parseFloat(i.value)||0;sv[i.dataset.k]=v;if(i.dataset.k[0]==="a")a+=v;else b+=v});lsS("cost",sv);var r=parseFloat($("rate").value)||0;
+ $("tot").textContent="合計約 NT$ "+Math.round(a+b*r).toLocaleString();$("sub").textContent="已訂 NT$ "+Math.round(a).toLocaleString()+"，日本當地 "+fm(b)+"（約 NT$ "+Math.round(b*r).toLocaleString()+"）。日本當地的數字是我的概估，可直接改。"}
+rows("t1",A1,"a");rows("t2",A2,"b");
+document.querySelectorAll("[data-k]").forEach(function(i){i.oninput=calc});$("rate").oninput=calc;calc();
+var CU=lsG("cu",[]);CU.forEach(function(c){S.push(c)});sel=lsG("sel",{});
+$("ca").onclick=function(){var n=$("cn").value.trim();if(!n)return;var c={id:"u"+Date.now(),n:n,c:$("cc").value,la:0,lo:0,h:["你自己加入的地點"],r:$("cr").value,s:parseFloat($("cs").value),f:0,x:"自訂地點，距離與門票只能概估",u:1};CU.push(c);S.push(c);lsS("cu",CU);$("cn").value="";renderCards();renderPick()};
+function esc(s){return String(s).replace(/[&<>']/g,c=>'&#'+c.charCodeAt(0)+';')}
+function mp(q){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q)}
+function lk(u,t){return `<a href='${esc(u)}' target='_blank' rel='noopener'>${t||'在 Google 地圖開啟'}</a>`}
+function opt(a,v){return a.map(x=>`<option value='${x[0]}'${String(x[0])===String(v)?' selected':''}>${x[1]}</option>`).join('')}
+var DL=D.map(x=>x.d.slice(0,5)),DO=DL.map((d,i)=>[i,d]);
+var FD=[['12/10（四）',[['晚餐','淺草仲見世通：人形燒、炸肉餅等小吃','淺草 仲見世通 人形焼'],['晚餐','錦糸町站周邊的拉麵與居酒屋','錦糸町 ラーメン']]],
+['12/11（五）',[['午餐','富士吉田的吉田烏龍麵，麵硬有嚼勁','富士吉田 吉田のうどん'],['晚餐','大池ホテル用餐，先確認方案是否含晚餐','大池ホテル 富士河口湖']]],
+['12/12（六）',[['早餐','路跑前吃輕食，如飯糰或香蕉','河口湖 コンビニ'],['午餐','河口湖的ほうとう（味噌湯麵鍋）','河口湖 ほうとう'],['晚餐','新宿思い出橫丁串燒','新宿 思い出横丁']]],
+['12/13（日）',[['午餐','原宿竹下通可麗餅','原宿 竹下通り クレープ'],['午餐','澀谷拉麵','渋谷 ラーメン'],['晚餐','台場或豐洲商場內的餐廳','お台場 レストラン']]],
+['12/14（一）',[['早餐','築地場外市場：玉子燒、海鮮丼、串燒','築地場外市場 玉子焼'],['午餐','澀谷午餐','渋谷 ランチ'],['晚餐','成田第 1 航廈內的餐廳','成田空港 第1ターミナル レストラン']]]];
+var RW=lsG('rw',[]);
+$('p1').innerHTML=`<div class='panel'><h3>新增想吃的餐廳</h3><div class='row'><input class='num' id='rn' placeholder='餐廳或想吃的東西' style='width:190px;text-align:left'><select id='rd'>${opt(DO,0)}</select><select id='rm'>${opt([['早餐','早餐'],['午餐','午餐'],['晚餐','晚餐'],['點心','點心']],'午餐')}</select><input class='num' id='rl' placeholder='Google 地圖連結（可不填）' style='width:210px;text-align:left'><input class='num' id='rb' placeholder='備註' style='width:140px;text-align:left'><button class='go' id='ra'>新增</button></div><p class='note' style='margin-top:8px'>沒填連結時，會用名稱自動產生 Google 地圖搜尋連結。下方各項的「地圖」也是搜尋連結，用來找該區的店，不是特定推薦，營業時間請自己查。</p></div><div class='grid' id='meals'></div>`;
+function renderMeals(){$('meals').innerHTML=FD.map((f,k)=>`<div class='card'><h3>${f[0]}</h3><ul>${f[1].map(m=>`<li><span class='tag'>${m[0]}</span> ${m[1]} ${lk(mp(m[2]),'地圖')}</li>`).join('')}${RW.map((r,n)=>r.k===k?`<li><span class='tag need'>想吃</span> ${esc(r.m)}　${esc(r.n)}${r.t?'（'+esc(r.t)+'）':''} ${lk(r.u&&r.u.indexOf('http')===0?r.u:mp(r.n),'地圖')}<button class='ux' data-r='${n}'>移除</button></li>`:'').join('')}</ul></div>`).join('')}
+$('ra').onclick=()=>{var n=$('rn').value.trim();if(!n)return;RW.push({k:+$('rd').value,m:$('rm').value,n:n,u:$('rl').value.trim(),t:$('rb').value.trim()});lsS('rw',RW);['rn','rl','rb'].forEach(x=>$(x).value='');renderMeals()};
+$('meals').addEventListener('click',e=>{var n=e.target.dataset.r;if(n!==undefined){RW.splice(+n,1);lsS('rw',RW);renderMeals()}});
+renderMeals();
+var HU=lsG('hu',{}),HQ=['京城里士滿飯店 錦糸町 東京','https://maps.app.goo.gl/2o4czJzX2fPELY3m6?g_st=il','京急EXイン 東京・日本橋'];
+function renderStay(){$('stay').innerHTML=H.map((h,k)=>{var u=HU[k]||(HQ[k].indexOf('http')===0?HQ[k]:mp(HQ[k]));return `<div class='card'><span class='tag'>${h.d}</span><h3>${h.n}</h3><ul>${h.l.map(t=>`<li>${t}</li>`).join('')}</ul><p style='margin:0'>${lk(u)}</p><input class='num' style='width:100%;text-align:left' placeholder='想換成確切的地圖連結？貼在這裡' value='${esc(HU[k]||'')}' data-h='${k}'></div>`}).join('')}
+$('stay').addEventListener('change',e=>{var k=e.target.dataset.h;if(k===undefined)return;var v=e.target.value.trim();if(v)HU[k]=v;else delete HU[k];lsS('hu',HU);renderStay()});
+renderStay();
+var ER=[['機票（含行李）',0,'TWD','p'],['住宿 3 間',0,'TWD','a'],['餐費 5 天（約每天 ¥4,000）',20000,'JPY','p'],['成田到錦糸町',1800,'JPY','p'],['富士回遊 2 趟（每趟約 ¥4,000）',8000,'JPY','p'],['下吉田到河口湖',400,'JPY','p'],['東京市區地鐵',3000,'JPY','p'],['市區到成田',2000,'JPY','p'],['teamLab Planets',3800,'JPY','p'],['澀谷 SKY',2500,'JPY','p'],['天上山纜車',900,'JPY','p'],['伴手禮與購物',10000,'JPY','p']];
+var CUR=[['TWD','NT$'],['JPY','¥'],['USD','US$']],CS=lsG('c2',{}),RC=lsG('rc',[]);
+$('p5').innerHTML=`<div class='panel'><h3>人數與匯率</h3><div class='row'><label>人數 <input class='num' id='xn' type='number' min='1' value='${lsG('xn',2)}' style='width:70px'></label><label>1 ¥ = NT$ <input class='num' id='xj' type='number' step='0.001' value='${lsG('xj',0.21)}' style='width:80px'></label><label>1 US$ = NT$ <input class='num' id='xu' type='number' step='0.1' value='${lsG('xu',32)}' style='width:80px'></label></div><p class='note' style='margin:6px 0 0'>匯率只是參考值，請改成當下的數字。</p></div><div class='panel'><h3>預估（可改幣別、每人或全部）</h3><div style='overflow-x:auto'><table id='xe' style='min-width:640px'></table></div></div><div class='panel'><h3>本次實際花費記錄</h3><div class='row'><select id='xd'>${opt(DO,0)}</select><select id='xk'>${opt(['餐飲','交通','門票','購物','住宿','其他'].map(x=>[x,x]),'餐飲')}</select><input class='num' id='xi' placeholder='項目' style='width:150px;text-align:left'><input class='num' id='xv' type='number' min='0' placeholder='金額' style='width:100px'><select id='xc'>${opt(CUR,'JPY')}</select><input class='num' id='xb' placeholder='備註' style='width:150px;text-align:left'><button class='go' id='xa'>新增記錄</button></div><div style='overflow-x:auto;margin-top:10px'><table id='xr' style='min-width:520px'></table></div></div><div class='panel' id='xt'></div>`;
+function rate(c){return c==='TWD'?1:(parseFloat($(c==='JPY'?'xj':'xu').value)||0)}
+function renderEst(){$('xe').innerHTML=`<tr class='note'><td>項目</td><td>金額</td><td>幣別</td><td>範圍</td><td>備註</td><td class='r'>NT$ 小計</td></tr>`+ER.map((r,i)=>{var s=CS[i]||{},v=s.v!==undefined?s.v:r[1];return `<tr><td>${r[0]}</td><td><input class='num' type='number' min='0' value='${v}' data-i='${i}' data-f='v' style='width:90px'></td><td><select data-i='${i}' data-f='c'>${opt(CUR,s.c||r[2])}</select></td><td><select data-i='${i}' data-f='m'>${opt([['p','每人'],['a','全部']],s.m||r[3])}</select></td><td><input class='num' value='${esc(s.n||'')}' data-i='${i}' data-f='n' style='width:130px;text-align:left'></td><td class='r' id='s${i}'></td></tr>`}).join('')}
+function renderRec(){$('xr').innerHTML=RC.length?`<tr class='note'><td>日期</td><td>類別</td><td>項目</td><td class='r'>金額</td><td>備註</td><td></td></tr>`+RC.map((r,n)=>`<tr><td>${DL[r.k]}</td><td>${r.g}</td><td>${esc(r.i)}</td><td class='r'>${CUR.filter(c=>c[0]===r.c)[0][1]}${r.v.toLocaleString()}</td><td>${esc(r.t||'')}</td><td><button class='ux' data-x='${n}'>刪除</button></td></tr>`).join(''):`<tr><td class='note'>還沒有記錄，花了錢就在上方新增。</td></tr>`}
+function calc2(){var np=parseFloat($('xn').value)||1,tw=0,tl=0,ac=0,rj=rate('JPY')||1;
+ ER.forEach((r,i)=>{var s=CS[i]||{},v=parseFloat(s.v!==undefined?s.v:r[1])||0,t=v*((s.m||r[3])==='p'?np:1)*rate(s.c||r[2]);tw+=t;if(i>1)tl+=t;$('s'+i).textContent=Math.round(t).toLocaleString()});
+ RC.forEach(r=>{ac+=r.v*rate(r.c)});
+ var f=n=>Math.round(n).toLocaleString();
+ $('xt').innerHTML=`<p class='big' style='margin:0'>預估合計 NT$ ${f(tw)}</p><p class='note'>約 ¥${f(tw/rj)}，${np} 人平均每人約 NT$ ${f(tw/np)}</p><p class='note'>其中日本當地預估 NT$ ${f(tl)}；已記錄實際花費 NT$ ${f(ac)}（約 ¥${f(ac/rj)}），當地預估還剩 NT$ ${f(tl-ac)}</p>`}
+function hnd(e){var t=e.target,i=t.dataset.i;if(i!==undefined){CS[i]=CS[i]||{};CS[i][t.dataset.f]=t.value;lsS('c2',CS)}else if(t.id==='xn'||t.id==='xj'||t.id==='xu')lsS(t.id,+t.value);else return;calc2()}
+$('p5').addEventListener('input',hnd);$('p5').addEventListener('change',hnd);
+$('p5').addEventListener('click',e=>{var t=e.target;if(t.id==='xa'){var v=parseFloat($('xv').value),n=$('xi').value.trim();if(!v||!n)return;RC.push({k:+$('xd').value,g:$('xk').value,i:n,v:v,c:$('xc').value,t:$('xb').value.trim()});RC.sort((a,b)=>a.k-b.k);lsS('rc',RC);['xi','xv','xb'].forEach(x=>$(x).value='');renderRec();calc2()}else if(t.dataset.x!==undefined){RC.splice(+t.dataset.x,1);lsS('rc',RC);renderRec();calc2()}});
+renderEst();renderRec();calc2();
+renderChips();renderCards();renderPick();
+</script>
+</body>
+</html>
